@@ -14,6 +14,10 @@
             font-family: "Poppins", sans-serif;
         }
 
+        header, nav, section, footer, aside, article, figure, figcaption {
+            display: block
+        }
+
         header {
             background-color: #FF7B54;
         }
@@ -45,6 +49,35 @@
         nav li a:hover {
             text-shadow: -1px 0 #FFD56F, 0 1px #FFD56F, 1px 0 #FFD56F, 0 -1px #FFD56F;
         }
+
+        section.menu {
+            float: left;
+            border-right : 1px solid white;
+            width: 60%;
+        }
+
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+
+        hgroup {
+            margin-top: 40px;
+        }
+
+        figure {
+            float: left;
+            width: 20%;
+            padding: 5px;
+            margin: 20px;
+            border: 1px solid white;
+        }
+
+        figcaption {
+            font-size: 90%;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -64,5 +97,30 @@
             </ul>
         </nav>
     </header>
+
+    <section class="menu">
+        <article>
+            <figure>
+                <img src="https://via.placeholder.com/150">
+                <figcaption>Nasi Goreng Cinta</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Nasi Goreng Cinta</h2>
+                <h3></h3>
+            </hgroup>
+            <p>Nasi yang digoreng dengan suwiran ayam, telur, kerupuk udang, dan sambal merah yang penuh cinta</p>
+        </article>
+        <article>
+            <figure>
+                <img src="https://via.placeholder.com/150">
+                <figcaption>Mie Goreng Kasih</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Mie Goreng Kasih</h2>
+                <h3></h3>
+            </hgroup>
+            <p>Mie kuning yang digoreng dengan suwiran ayam, telur, dan kecap manis dengan penuh kasih</p>
+        </article>
+    </section>
 </body>
 </html>
