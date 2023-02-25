@@ -150,9 +150,31 @@
             color : #FF7B54; */
         }
 
+        #loading {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.75;
+            background-color: #fff;
+            z-index: 99;
+        }
+
+        #loading-image {
+            z-index: 100;
+        }
+
     </style>
 </head>
-<body>
+<body onload="setTimeout(removeLoad, 1500)">
+    <div id="loading">
+        <img id="loading-image" src="./assets/loading.gif" alt="Loading..." />
+    </div>
+
     <header class="title">
         <img src="./assets/logoImg.png" width="100" height="80" style="display: inline-block; padding-top : 5px;">
         <div style="display: inline-block; padding-left: 4px; padding-bottom: 3px; transform: translateY(-11.5px);">
@@ -163,7 +185,7 @@
         <nav>
             <ul>
                 <li><a href="" class="current">Beranda</a></li>
-                <li><a href="" class="hoverableNav">Menu</a></li>
+                <li><a href="menu.html" class="hoverableNav">Menu</a></li>
                 <li><a href="" class="hoverableNav">Tentang</a></li>
                 <li><a href="" class="hoverableNav">Kontak</a></li>
             </ul>
@@ -178,7 +200,7 @@
             </figure>
             <hgroup>
                 <h2>Nasi Goreng Merona</h2>
-                <h3>Makanan Kering</h3>
+                <h3>Makanan Berat</h3>
             </hgroup>
             <p>Nasi yang digoreng dengan suwiran ayam, telur, dan potongan sosis. Dibumbui menggunakan saus dan bumbu merah andalan Bu Bos yang pastinya menggugah selera, apalagi bila dimakan dengan kerupuk yang kriuk nan gurih.</p>
         </article>
@@ -189,7 +211,7 @@
             </figure>
             <hgroup>
                 <h2>Mie Goreng Jawa</h2>
-                <h3>Makanan Kering</h3>
+                <h3>Makanan Berat</h3>
             </hgroup>
             <p>Mie lebar yang dimasak dengan udang, potongan bakso, dan sayur-sayuran. Dibumbui dengan kecap manis dan juga bumbu jawa rahasia Bu Bos yang sedap membahana, tentunya akan membuat lidah bergoyang bila dimakan bersama dengan cabai rawit.</p>
         </article>
@@ -221,5 +243,11 @@
     <footer>
         &copy; 2022 Warung Bu Bos
     </footer>
+
+    <script>
+        function removeLoad() {
+            document.getElementById("loading").style.display="none";
+        } 
+    </script>
 </body>
 </html>
