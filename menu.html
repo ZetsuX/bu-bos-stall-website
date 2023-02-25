@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Bu Bos</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <script src="https://kit.fontawesome.com/8ee6b1ea1e.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: "Poppins", sans-serif;
+        }
+
+        header, nav, section, footer, aside, article, figure, figcaption {
+            display: block
+        }
+
+        header {
+            background-color: #FF7B54;
+        }
+
+        nav {
+            background-color: #FFB26B;
+            padding-left: 10px;
+            padding-top: 2px;
+            padding-bottom: 2px;
+        }
+
+        nav ul {
+            padding: 4px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 30px;
+        }
+
+        nav li a.hoverableNav {
+            color : white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav li a.hoverableNav:hover {
+            text-shadow: -1px 0 #FFD56F, 0 1px #FFD56F, 1px 0 #FFD56F, 0 -1px #FFD56F;
+        }
+
+        nav li a.current {
+            color: #ee5c2f;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        .left-table {
+            float : left;
+            width: 48%;
+            border-right: 1px solid #FFD56F;
+        }
+
+        .right-table {
+            float : right;
+            width: 51%;
+        }
+
+        table {
+            padding: 30px;
+        }
+
+        table img {
+            width: 118px;
+            height: 84px;
+        }
+
+        table td {
+            padding : 7px;
+        }
+
+        td.buy {
+            text-align: center;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-size: 80%;
+            padding : 5px 0px 3px 20px;
+            background-color: #FF7B54;
+            color : white;
+
+            /* padding : 10px 0px 8px 20px;
+            color : #FF7B54; */
+        }
+
+        #loading {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.75;
+            background-color: #fff;
+            z-index: 99;
+        }
+
+        #loading-image {
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body onload="setTimeout(removeLoad, 1500)">
+    <div id="loading">
+        <img id="loading-image" src="./assets/loading.gif" alt="Loading..." />
+    </div>
+    
+    <header class="title">
+        <img src="./assets/logoImg.png" width="100" height="80" style="display: inline-block; padding-top : 5px;">
+        <div style="display: inline-block; padding-left: 4px; padding-bottom: 3px; transform: translateY(-11.5px);">
+            <h1 style="color: white;">Warung Bu Bos</h1>
+            <h3 style="padding-left: 3px; color: #FFD56F;">Tak pernah tergantikan, selalu di hati..</h3>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html" class="hoverableNav">Beranda</a></li>
+                <li><a href="" class="current">Menu</a></li>
+                <li><a href="" class="hoverableNav">Tentang</a></li>
+                <li><a href="" class="hoverableNav">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="left-table">
+        <table>
+            <tr>
+                <td><img src="./assets/nasgorImg.jpg"></td>
+                <td>Nasi Goreng Merona</td>
+                <td>Nasi goreng merah dengan ayam, telur, sosis, dan kerupuk</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP15.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="./assets/nasgorImg.jpg"></td>
+                <td>Nasi Goreng Merona</td>
+                <td>Nasi goreng merah dengan ayam, telur, sosis, dan kerupuk</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP15.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="./assets/nasgorImg.jpg"></td>
+                <td>Nasi Goreng Merona</td>
+                <td>Nasi goreng merah dengan ayam, telur, sosis, dan kerupuk</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP15.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="./assets/nasgorImg.jpg"></td>
+                <td>Nasi Goreng Merona</td>
+                <td>Nasi goreng merah dengan ayam, telur, sosis, dan kerupuk</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP15.000,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="right-table">
+        <table>
+            <tr>
+                <td><img src="./assets/migorImg.jpg"></td>
+                <td>Mie Goreng Jawa</td>
+                <td>Mie goreng ala Jawa dengan udang, telur, dan potongan bakso</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP14.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="./assets/migorImg.jpg"></td>
+                <td>Mie Goreng Jawa</td>
+                <td>Mie goreng ala Jawa dengan udang, telur, dan potongan bakso</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP14.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="./assets/migorImg.jpg"></td>
+                <td>Mie Goreng Jawa</td>
+                <td>Mie goreng ala Jawa dengan udang, telur, dan potongan bakso</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP14.000,00</td>
+            </tr>
+            <tr>
+                <td><img src="./assets/migorImg.jpg"></td>
+                <td>Mie Goreng Jawa</td>
+                <td>Mie goreng ala Jawa dengan udang, telur, dan potongan bakso</td>
+                <td class="buy"><a href="">Beli</a><br><br>RP14.000,00</td>
+            </tr>
+        </table>
+    </section>
+
+    <div class="hidden">
+        <h1>Hidden</h1>
+    </div>
+
+    <footer>
+        &copy; 2022 Warung Bu Bos
+    </footer>
+
+    <script>
+        function removeLoad() {
+            document.getElementById("loading").style.display="none";
+        } 
+    </script>
+</body>
+</html>
