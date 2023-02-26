@@ -56,6 +56,104 @@
             font-weight: bold;
         }
 
+        section.about {
+            float: left;
+            border-right : 1px solid #FFD56F;
+            width: 78%;
+        }
+
+        article {
+            clear: both;
+            overflow: auto;
+            width: 100%;
+        }
+
+        figure {
+            float: left;
+            width: 24%;
+            padding: 5px;
+            margin: 25px 20px;
+        }
+
+        figure img {
+            width: 500px;
+            height: 400px;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            font-size: 90%;
+            text-align: left;
+            color : #939B62
+        }
+
+        hgroup {
+            margin-top: 36px;
+            margin-left: 525px;
+            font-size: 110%;
+            text-align: center;
+        }
+
+        hgroup h2 {
+            color : #FF7B54
+        }
+
+        hgroup h3 {
+            color : #FFB26B
+        }
+
+        section.about p {
+            font-size: 110%;
+            margin-left: 560px;
+            margin-top : 20px;
+            text-align: justify;
+            width: 44%
+        }
+
+        fgroup h3 {
+            color : #939B62;
+            margin-left: 580px;
+            margin-top: 15px;
+        }
+
+        article p {
+            margin-top : 5px;
+        }
+
+        aside {
+            width : 18%;
+            float: right;
+            padding-right: 20px;
+        }
+
+        aside section.map img {
+            width: 235px;
+            height: 180px;
+        }
+
+        aside section a {
+            display: block;
+            padding : 10px;
+            margin-right: 12px;
+            border-bottom : 1px solid #FFD56F;
+            text-decoration : none;
+            color : #939B62;
+        }
+
+        aside section a:hover {
+            color:#FFB26B;
+            background-color: whitesmoke;
+        }
+
+        aside h2 {
+            padding: 30px 0px 10px 0px;
+            color:#FF7B54;
+        }
+
+        aside section a i {
+            margin-right: 14px;
+        }
+
         .hidden {
             visibility: hidden;
         }
@@ -112,6 +210,41 @@
             </ul>
         </nav>
     </header>
+
+    <section class="about">
+        <article>
+            <figure>
+                <img src="./assets/warungImg.jpg">
+                <figcaption>Suasana Warung Bu Bos</figcaption>
+            </figure>
+            <hgroup>
+                <h2>Warung Bu Bos</h2>
+                <h3>Spesialis Makanan Indonesia</h3>
+            </hgroup>
+            <p>Warung yang baru saja didirikan oleh Bu Bos dengan bantuan Pak Bos di tahun 2023 ini, menyediakan berbagai macam makanan khas Indonesia yang sehat dengan harga yang terjangkau.</p>
+            <p>Dengan suasana tempat yang nyaman dan sangat menggambarkan Indonesia yang ditambah dengan citarasa mantap dari makanan yang disajikan, tentu akan memberikan pengalaman yang tak terlupakan dan tak tergantikan</p>
+            
+            <fgroup>
+                <h3>Datang dan rasakan sendiri kenikmatannya!</h3>
+            </fgroup>
+    </section>
+
+    <section class="sidebar">
+        <aside>
+            <section class="map">
+                <h2>Lokasi</h2>
+
+                <img src="./assets/mapImg.jpg">
+            </section>
+            <section class="contact">
+                <h2>Kontak</h2>
+
+                <a href=""><i class="fa-solid fa-phone"></i> (+62)85112345678</p>
+                <a href=""><i class="fa-brands fa-instagram"></i> @warungbubos.sby</p>
+                <a href=""><i class="fa-brands fa-facebook"></i> Warung Bu Bos Sby</a>
+            </section>
+        </aside>
+    </section>
 
     <div class="hidden">
         <h1>Hidden</h1>
